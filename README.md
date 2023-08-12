@@ -20,5 +20,12 @@ Just like useState, you can also use multiple useEffects to separate unrelated l
 In some cases, executing the effect after every render creates a performance problem, It can be optimized by Skipping the effect when it is not required.\
 The useEffect accepts another argument called ***Dependency Array***, using which we can control the execution of effect.
 #### Syntax: `useEffect(effect, [var1, var2, ...])`
+- The values we pass to the dependency array are called dependencies, which can be state variables or props.
+- Effect will be executed whenever the dependencies are changed.
+#### Without Dependencies
+The Effect executes after every render.
+**`useEffect(effect)`**
+
+
 
 
