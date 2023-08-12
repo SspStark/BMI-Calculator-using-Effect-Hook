@@ -23,8 +23,14 @@ The useEffect accepts another argument called ***Dependency Array***, using whic
 - The values we pass to the dependency array are called dependencies, which can be state variables or props.
 - Effect will be executed whenever the dependencies are changed.
 #### Without Dependencies
-The Effect executes after every render.
+The Effect executes after every render.\
 **`useEffect(effect)`**
+#### Passing Empty Dependency Array
+The Effect executes only once after the first render.\
+`useEffect(effect, [])`
+#### Passing Dependencies
+The Effect executes when dependencies are changed.\
+`useEffect(effect, [var1, var2,...])`
 
 
 
